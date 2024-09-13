@@ -1,0 +1,48 @@
+USE OF GDB - 
+you put a lot of cout or printf statements in the code if something goes wrong
+
+source file name - main
+g++ -o out main.cpp
+./out
+
+To compile code-
+g++ -g main.cpp  -o main.o -g gdb3
+gdb a.out
+
+To run code - 
+
+(gdb) r
+
+if you want that your program should stop at some point so that you cant review the condtion of your program
+the line at which you want that program to stop temporarily is called breakpoint
+ break function_name
+OR
+break line no
+
+to stop program you need to see code for that command is- list
+it will show neighbour 10 lines near breaj point
+
+to run program line by line 
+next/step commands
+
+next - like display
+step - to go through functions and loops
+
+to examine variable 
+
+print var_name
+
+we can set var value by 
+
+set val_name = value
+
+watchpoint - To see running commentry of any variable
+
+watch var
+
+to stop program 
+quit -q
+
+
+
+ tui en
