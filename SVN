@@ -1,0 +1,53 @@
+Docker related notes
+svn status
+
+U: Working file was updated
+
+G: Changes on the repo were automatically merged into the working copy
+
+M: Working copy is modified
+
+C: This file conflicts with the version in the repo
+
+?: This file is not under version control
+
+!: This file is under version control but is missing or incomplete
+
+A: This file will be added to version control (after commit)
+
+A+: This file will be moved (after commit)
+
+D: This file will be deleted (after commit)
+
+S: This signifies that the file or directory has been switched from the path of the rest of the working copy (using svn switch) to a branch
+
+I: Ignored
+
+X: External definition
+
+~: Type changed
+
+R: Item has been replaced in your working copy. This means the file was scheduled for deletion, and then a new file with the same name was scheduled for addition in its place.
+
+L : Item is locked
+
+E: Item existed, as it would have been created, by an svn update.
+
+
+
+
+
+
+
+
+
+
+
+
+
+export SVN_EDITOR=vimsvn propedit svn:externals . 
+
+svn diff <filename>to check for changes
+
+source /opt/rh/devtoolset-9/enable
+
