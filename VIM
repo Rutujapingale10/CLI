@@ -1,0 +1,63 @@
+i insert mode
+ 
+esc command mode
+:lineno ->  go to line
+ 
+/texttofind -> case sensitive search
+/\ctexttofind -> case insensitive search
+ 
+ 
+:%s/replacethis/replacewith/g
+:%s/replacethis/replacewith/ -> ask for confirmation before replace
+ 
+ esc u - undo
+esc dd -> to delete a line
+esc  n dd -> to delete n number of  line
+ 
+esc p -> to paste below current line
+esc P -> to paste above current line
+ 
+:w -> save
+:w! -> force save
+ 
+:q -> quit
+:q! -> quit
+ 
+:wq -> save and quit
+:wq! ->  force save and quit
+
+ clear- to clear terminal
+Esc move cursor to the beginning in file ggVG - select all  
+
+  ctags -R - to see function
+   ctl } - to jumb
+    ctl+T - move back
+
+Esc:n1,n2 d - delete lines from n1 to n2
+Esc:n1,n2 y - copy lines n1 to n2
+
+Esc G- reach end of program
+Esc gg - to go first line
+ esc:set number - to see number
+
+   ls -ld *_conf
+
+To identation and formation esc = G
+To match brackets esc  %5
+ 
+
+
+
+
+How to softlink a file 
+
+        ls  -s /home/dir1/dir2/filename softlink
+        
+        This will create softlink to file on current path
+        
+        If we deleted source file softlink file color will become red 
+        
+        ls  /home/dir1/dir2/filename hardlink
+        
+        This will create hard link for file and if we delete source hardlink shortcut will remain as it is
+
