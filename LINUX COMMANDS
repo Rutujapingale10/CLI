@@ -1,0 +1,264 @@
+*list (ls) ls command
+
+ ls- to list files
+ ls / - >list files one directory back
+  ls ~ - >list home directory
+ ls /dir1 -> list dir1
+ ls ../ - >one folder back
+ ls ../.. - >two dir back
+ ls -l -> to list out all the files and directory in long format
+  ls -a -> show hidden files
+ ls -al -> hidden files and long list combinaly
+ ls -lS - >sort files based on their size
+ ls document/*.cpp -> list files in documents which end with .cpp extension
+ ls document/*.* - >list files in dicumrnts with all extensions
+ ls -d */ -> to list out all directory
+  man -> works as a dicitonary
+ man ls -> show defination and related flags of ls
+
+  *cd command
+ cd -> to change current working directory
+ cd / ->to go root directory
+ cd -  ->to go previously enter directory
+ cd .. ->to go parent of the current folder
+  cd ~ -> to go home directory
+  cd /home/dir1 - absolute path
+ cd dir1 - relative path
+
+
+
+*cat command
+ cat fileName -> to show contant of file
+ cat -n fileName -> it will add line no to each line
+ cat -s fileName -> compress many lines to one line
+ cat >FileName -> to write containt in file
+ cat>>fileName ->to add additional contant in the file(content will not overwritten)
+ cat fileName1 fileName2>fileName3 - >to combine 2 files fileName3 will create  
+ 
+*mkdir command
+ mkdir dir1 -> create dir dir1
+ mkdir -p dir1/dir2 - >create parent dir1 and sub dir dir2 
+ mkdir -p dir1/{dir2,dir3.dir4}->to create multiple directories in parent directory dir1
+ 
+   
+
+ *rm commnd
+ rmdir dirName - > to remove directory
+ rmdir -p dir1/dir2/dir3 ->to remove whole directory structure(if directory contain any file this command will not work)
+ rmdir -pv dir1/dir2/dir3 -> -pv show what happening in backg. 
+ rm -rv a/b - it will remove all directories and files inside b(consider a as a parent) rm -rv a ->will works same 
+  
+	
+	
+
+*cp command 
+ cp file1 dir1 - file1 copy to directory1
+ cp p1.cpp p2.cpp dir1 - copy p1.cpp and p2.cpp in dir but if p1.cpp or p2.cpp already present in dir1 then file will get overwritten
+ cp -I p1.cpp p2.cpp dir1 - will ask before overwrite
+ cp -r dir1 dir2 - recursively copy content of dir1 to dir2 
+  
+Move command - to change file name
+ mv oldname newname -
+ mv file1 dir1/ - transfer file 1 under dir1
+ mv file1 dir/ if file1 already present then it will get overwritten
+ mv -I file1 dir/ - avoid overwrittern  (i=intereactive mode) 
+ mv dir1 dir2 - move dir1 to dir2 (both directory already exist)
+ mv dir2 dir3 - (if dir3 not exist it will get created first and move content of dir 2 to dir 3)
+ 
+ *touch command
+ touch filename -> create empty file
+ touch -a  = to change access time
+ touch -m - to modify file
+   
+ drwxr - xr -x 
+ drwxr - logged in rights. Whoever logged in have these rights
+              d - directory
+	   r -read
+	  w -write
+	X -execute
+	 r - read
+ xr -  group rites
+            execute read
+ x - other rights
+       execute only
+ 
+
+	
+	 
+	
+         
+
+
+ clear - to clear terminal
+ pwd - present working dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+history
+ 
+linux_cmd
+ 
+mkdir -p dir1/dir2/dir3/dir4
+ 
+ 
+]$ pwd
+/home/rutuja.pingale/linux_cmd
+ 
+absoultte path
+ 
+/home/rutuja.pingale/linux_cmd
+ 
+absolute path
+[rutuja.pingale@devhssdb1 linux_cmd]$ cd /home/rutuja.pingale/
+[rutuja.pingale@devhssdb1 ~]$ pwd
+/home/rutuja.pingale
+ 
+ 
+relative path
+[rutuja.pingale@devhssdb1 linux_cmd]$ cd ../
+[rutuja.pingale@devhssdb1 ~]$ pwd
+/home/rutuja.pingale
+[rutuja.pingale@devhssdb1 ~]$
+ 
+ 
+ 
+$ ls -l h*
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale 9048 Sep  2 10:40 hello
+-rw-rw-r-- 1 rutuja.pingale rutuja.pingale  235 Sep  2 10:40 hello.cpp
+[rutuja.pingale@devhssdb1 ~]$
+[rutuja.pingale@devhssdb1 ~]$
+[rutuja.pingale@devhssdb1 ~]$ ls -ld h*
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale 9048 Sep  2 10:40 hello
+-rw-rw-r-- 1 rutuja.pingale rutuja.pingale  235 Sep  2 10:40 hello.cpp
+ 
+ 
+[rutuja.pingale@devhssdb1 ~]$ ls -l R*
+total 88
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale  8880 Sep  8 17:24 a
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale 19736 Sep  9 10:34 a.out
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale  8888 Sep  5 16:46 code
+-rw-rw-r-- 1 rutuja.pingale rutuja.pingale     0 Sep  8 17:30 fact,cpp
+-rw-rw-r-- 1 rutuja.pingale rutuja.pingale   223 Sep  9 09:22 fact.cpp
+-rw-rw-r-- 1 rutuja.pingale rutuja.pingale    83 Sep  5 16:45 mycode.cpp
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale  8880 Sep  8 16:50 op
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale  8880 Sep  8 17:19 op1
+-rwxrwxr-x 1 rutuja.pingale rutuja.pingale  8880 Sep  9 10:34 out
+[rutuja.pingale@devhssdb1 ~]$ ls -ld R*
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale 166 Sep  9 10:34 Rutuja
+[rutuja.pingale@devhssdb1 ~]$
+ 
+ 
+ 
+[rutuja.pingale@devhssdb1 netconf]$ ls -l ns
+nsacf_conf/ nssf_conf/
+[rutuja.pingale@devhssdb1 netconf]$ ls -l ns
+nsacf_conf/ nssf_conf/
+[rutuja.pingale@devhssdb1 netconf]$ ls -l t
+tags    target/ test/   trace/
+[rutuja.pingale@devhssdb1 netconf]$ ls -l t
+tags    target/ test/   trace/
+[rutuja.pingale@devhssdb1 netconf]$ ls -l ta
+tags    target/
+[rutuja.pingale@devhssdb1 netconf]$ ls -l target/
+total 8
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale 4096 Sep  8 10:51 agt
+drwxrwxr-x 4 rutuja.pingale rutuja.pingale  156 Sep  8 11:03 bin
+drwxrwxr-x 3 rutuja.pingale rutuja.pingale  164 Sep  8 11:03 lib
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale  217 Sep  8 11:03 mgr
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale 4096 Sep  8 10:51 ncx
+drwxrwxr-x 4 rutuja.pingale rutuja.pingale   52 Sep  8 10:51 netconfd
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale   33 Sep  8 10:51 subsys
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale  321 Sep  8 11:03 yangcli
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale    6 Sep  8 10:51 yangdiff
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale    6 Sep  8 10:51 yangdump
+drwxrwxr-x 2 rutuja.pingale rutuja.pingale    6 Sep  8 10:51 ydump
+[rutuja.pingale@devhssdb1 netconf]$
+[rutuja.pingale@devhssdb1 netconf]$
+[rutuja.pingale@devhssdb1 netconf]$
+
+
+
+mkdir - to make directory
+
+pwd - present working directory
+
+cd - to navigate directory
+cd . - you will remain in same directory
+c .. - move up one directory
+cd - go to previous directory
+cd ~ - go to home directory
+cd / - go to root directory
+ls - show list of files
+ls -a - show all files in directory
+ls -h - show directory's content with file size
+ls -r - how to see sub directory recursively
+ls -is -how to see files by size
+ls -alh - list all folder in directory with details
+cp - to copy file
+cp -r - copy a folder with all files
+mv -moving file
+mv filename .. - move file up one directory
+
+
+Linux Networking
+
+
+	Ping  - to check internet connectivity between host and server
+	
+	
+	Netstat - it stands network statistic. It allow users to display network related information and diagnose various network related information   
+	
+		it’s like a window that shows you what’s happening with your computer and the internet.
+		
+		It tell about - 
+			Connection computer making , the path it uses to send information, some technical details like how many packets of data are being send or received .
+			
+		
+		Ifconfig  -  It allow user to configure network interfaces including - ip address, netmask and broadcast addresses 
+		
+		Netmask - series of 4 number  e.g.   netmask 255.255.255.224  
+		
+		determines how IP addresses are divided into networks and hosts.
+		
+		By applying netmask we can determine  which devices are within same network and  directly communicate with each other without need for routing.
+		
+		hostname -  used to get system host name
+		
+		
+		 
+		
+		
+		
+		
+			
+			
+			
+		
+		
+		
+		
+		
+ 
+ 
