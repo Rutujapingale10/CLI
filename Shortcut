@@ -1,0 +1,11 @@
+https://www.tecmint.com/linux-command-line-bash-shortcut-keys/#:~:text=Ctrl%2BA%20or%20Home%20%E2%80%93%20moves,one%20character%20at%20a%20time.
+
+From <https://teams.microsoft.com/multi-window/?agent=electron&version=22073101005> 
+
+
+
+ps -ef | grep <process_name>
+ps -ef | grep Ps
+
+
+
