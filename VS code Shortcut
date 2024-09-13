@@ -1,0 +1,14 @@
+Right click on function name ->go to defination
+Alt <    - > to go back
+Alt >  -> to go forward
+Ctrl + shift + \   -> to go to matching bracket
+ 
+Ctrl + F  -> find 
+Ctrl + L  ->select current line
+
+Ctrl +g  ->go to line no
+Ctl + P -> go to file
+
+Ctrl+shift+K  -> delete current line
+
+Shift+ctrl+p - to add vsix 
