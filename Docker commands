@@ -1,0 +1,53 @@
+Docker - Docker is an open platform for developing ,shipping and running application.
+Docker is platform which package an application  and all its dependencies together in the form of containers.
+
+
+  Docker file, docker images, containers-
+Docker file - text document which contain all the command that a user can call on command line to assemble image. 
+Docker image - template to create docker container.
+Docker container - running instance of docker image it hold whole package to run application.
+
+
+Docker file
+
+Docker images -
+
+  docker pull <imagename>
+
+ docket attach [option] container_name  -  Attach local standard input output and error stream to a running container
+docker build [option] path  -  build an image from Dockerfile
+ docker commit [option] container [repo] - create a new image from container change.
+ docker container COMMAND - 
+ docker cp - copy files /folders between one container and local filesystem
+Docker create - create new container 
+Docker diff - inspect changes to file or directories on containers file system
+Docker exec - execute a command in running container 
+Docker export - Export a container file system as tar archieve
+Docker history - show history of an image 
+Docker images - list images 
+Docker import - import a content from tarball to create filesystem image 
+Docker inf0 - display system-wide information
+Docker kill - kill one or more running container 
+Docker load - load an image from tar archieve or STDIN
+Docker login - log into docker registry 
+Docker logout - logout from docker registry
+Docker logs - fetch logs from container
+Docker pause - pause all process within one or more container 
+Docker ps - list container
+Docker pull - dowload an image from regisrty
+Docker push - upload an image to registry
+Docker rename - rename a container 
+Docker restart - restart one or more container 
+Docker rm - remove one or more container
+Docker rmi - remove one or more images
+Docker run - create and run new container from image
+Docker save - save one or more images to tar archive
+Docker search - search Docker hub for images
+Docker start - start one or more container
+Docker stats - Display live stream of container
+Docker stop - stop one or more running container
+Docker stop - stop one or more running container
+Docker update - update configuration of one or more container
+Docker version - show docker version 
+  
+  
